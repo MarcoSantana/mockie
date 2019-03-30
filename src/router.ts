@@ -5,6 +5,8 @@ import Home from './views/Home.vue';
 Vue.use(Router);
 
 export default new Router({
+  mode: 'history',
+  base: process.env.BASE_URL,
   routes: [
     {
       path: '/',
@@ -19,5 +21,20 @@ export default new Router({
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
     },
+    {
+      path: '/sign-in',
+      name: 'signin',
+      component: () => import('./views/Signin.vue')
+    },
+    {
+      path: '/join',
+      name: 'join',
+      component: () => import('./views/Join.vue')
+    },
+    {
+      path: '/control-panel',
+      name: 'control-panel',
+      component: () => import('./views/ControlPanel.vue')
+    }
   ],
 });
