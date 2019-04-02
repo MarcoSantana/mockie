@@ -7634,6 +7634,11 @@ vue-property-decorator@^8.0.0:
   dependencies:
     vue-class-component "^7.0.1"
 
+vue-qr@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/vue-qr/-/vue-qr-2.0.4.tgz#25a2bb83450f3361feffa3314bef315e7ffee580"
+  integrity sha512-Pq6QScV/tAIFXgTPi+aS+DSkbzJSjjVfFLAu+4l8M0RZs+ZXmBaEVnivoVM8v4sEtb7zQB5IXilwMSN/o89iVw==
+
 vue-router@^3.0.1:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.0.2.tgz#dedc67afe6c4e2bc25682c8b1c2a8c0d7c7e56be"
