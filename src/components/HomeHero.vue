@@ -5,9 +5,6 @@
             Evaluación de publicación
           </div>
           <div class="display-2 font-weight-black white--text text-xs-center mb-3 landing-text">Consiga puntos de recertificación</div>
-          <v-btn fab class="mt-5" color="teal darken-2" dark>
-            <v-icon dark left>keyboard_arrow_down</v-icon>
-          </v-btn>
         </v-layout>
     </v-container>
 </template>

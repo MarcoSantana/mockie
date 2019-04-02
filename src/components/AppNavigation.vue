@@ -1,15 +1,17 @@
 <template>
     <span>
         <v-toolbar app color="orange darken-4" dark>
-            <v-toolbar-side-icon class="hidden-md-and-up grey--text lighten-4" @click="drawer = !drawer">
+            <v-toolbar-side-icon class="hidden-md-and-up" @click="drawer = !drawer">
                 <v-icon>home</v-icon>
             </v-toolbar-side-icon>
-            <v-toolbar-title>{{appTitle}}</v-toolbar-title>
+            <v-toolbar-title>
+              <router-link to="/">{{appTitle}}</router-link>
+            </v-toolbar-title>
             <v-spacer class="hidden-sm-and-down"></v-spacer>
-            <v-btn flat class="hidden-sm-and-down" v-if="loged" to="control-panel">Panel de control</v-btn>
+            <v-btn flat class="hidden-sm-and-down"  to="panel">Panel de control</v-btn>
             <v-spacer class="hidden-sm-and-down"></v-spacer>
             <span v-if="!loged">
-                <v-btn flat class="hidden-sm-and-down" to="sign-in">Ingresar</v-btn>
+                <v-btn  class="hidden-sm-and-down" to="sign-in">Ingresar</v-btn>
                 <v-btn color="orange lighten-1" class="hidden-sm-and-down" to="join">Registrarse</v-btn>
             </span>
         </v-toolbar>
@@ -18,8 +20,8 @@
                     <v-toolbar flat>
                         <v-list>
                             <v-list-tile>
-                                <v-list-tile-title to="home" class="title">
-                                    {{appTitle}}
+                                <v-list-tile-title class="title">
+                                    <router-link to="/">{{appTitle}}</router-link>
                                 </v-list-tile-title>
                             </v-list-tile>
                         </v-list>
@@ -61,5 +63,9 @@ export default Vue.extend({
 </script>
 
 <style scoped>
+a {
+    color: white;
+    text-decoration: none;
+}
 
 </style>

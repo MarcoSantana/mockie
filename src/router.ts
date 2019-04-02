@@ -32,9 +32,9 @@ export default new Router({
       component: () => import('./views/Join.vue')
     },
     {
-      path: '/control-panel',
-      name: 'control-panel',
-      component: () => import('./views/ControlPanel.vue')
-    }
+      path: '/panel',
+      name: 'panel',
+      component: () => import('./views/Panel.vue')
+    },
   ],
 });
