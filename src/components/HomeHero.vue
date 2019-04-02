@@ -2,7 +2,7 @@
     <v-container fluid fill-height class="home-hero" style="max-height: 100vh;" >
         <v-layout justify-center align-center column pa-5>
           <div class="display-3 font-weight-black white--text text-xs-center landing-text">
-            Evaluación de publicación
+            Evaluación de actualización
           </div>
           <div class="display-2 font-weight-black white--text text-xs-center mb-3 landing-text">Consiga puntos de recertificación</div>
         </v-layout>
