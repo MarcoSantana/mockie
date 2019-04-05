@@ -22,7 +22,7 @@ export default new Vuex.Store({
     }
   },
   actions: {
-     async getQuestions({ state, commit }, category) {
+    async getQuestions({ state, commit }, category) {
       try {
         console.log(state.apiUrl);
         let response = await axios.get(state.apiUrl, {

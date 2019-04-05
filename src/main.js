@@ -2,7 +2,7 @@ import Vue from 'vue';
 import './plugins/vuetify'
 import App from './App.vue';
 import router from './router';
-import store from './store';
+import store from './store.js';
 import '@/firebase/';
 import './registerServiceWorker';
 import 'roboto-fontface/css/roboto/roboto-fontface.css'
