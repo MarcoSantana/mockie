@@ -2,9 +2,9 @@
   <v-content>
       <v-layout align-center="align-center" justify-center="justify-center">
           <v-card>
-            <v-card-media class="hidden-sm-and-down" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Elsevier.svg/1200px-Elsevier.svg.png" height="auto">
-            </v-card-media>
-            <v-card-title primary-titlea color="pink">
+            <v-img class="hidden-sm-and-down" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Elsevier.svg/1200px-Elsevier.svg.png" height="auto">
+            </v-img>
+            <v-card-title primary-title color="pink">
               <div>
                 <h3 class="headline">Ingreso de suscriptores</h3>
                 <div>Utilice sus datos de suscriptción</div>

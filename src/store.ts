@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import axios from 'axios'
+import firebase from 'firebase';
 
 Vue.use(Vuex);
 
@@ -12,6 +13,12 @@ export default new Vuex.Store({
   mutations: {
     setQuestions(state, payload) {
       state.questions = payload;
+    },
+    setUser(state, payload) {
+      state.user = payload;
+    },
+    setIsAuthenticated(state, payload) {
+      state.isAuthenticated = payload;
     }
   },
   actions: {
@@ -28,6 +35,19 @@ export default new Vuex.Store({
       } catch(error) {
         commit('setQuestions', [error]);
       }
+    },
+    userJoin({ commit }, { email, password }) {
+      firebase
+        .auth()
+        .createUserWithEmailAndPassword(email, password)
+        .then(user => {
+          commit('setUser', user);
+          commit('setIsAuthenticated', true);
+        })
+        .catch(() => {
+          commit('setUser', null);
+          commit('setIsAuthenticated', false)
+        });
     }
   },
 });
