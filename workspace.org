@@ -1,0 +1,26 @@
+* Reglas de negocios
+
+* Descripción de elementos y abstracciones
+** User
+*** Datos mínimos
+**** correo electrónico
+**** nombre, apellido
+**** número de contrato ELSEVIER
+*** Perfil (profile)
+**** Especialidad clínica (para añadir capítulos y otras especialidades)
+**** fecha de nacimiento
+**** dirección
+**** ¿ocupación? (saber si es clínico o quirúrgico, privado, institucional)
+***** Lugar de trabajo (dirección)
+**** avatar
+**** redes sociales
+** Examen
+   A lo mejor crear herencia recursiva para que una casilla pueda contener casillas y así crear grupos de preguntas que estén relacionados entre ellos y/ó con una imagen y/ó una viñeta.
+*** Casillas
+    Componente de examen y se presenta con sus dependientes como una unidad presumiblemente en una sola pantalla para ser respondida
+**** imágenes (o cualquier material del tipo)
+**** viñeta (puede existir ó no)
+
+* Librerías adicionales
+** vuex-typescript-decorators
+*** Se creo vue.config.js
